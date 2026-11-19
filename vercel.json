@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 30,
+      "includeFiles": "{docs/답변참고문서/청킹/**,docs/답변참고문서/청킹전/성북구_*인허가_2026.md}"
+    }
+  }
+}

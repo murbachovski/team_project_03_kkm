@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>성북 세이프패스</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">성북 세이프패스</div>
+  <nav class="langs" aria-label="Language">
+    <button data-lang="ko">한국어</button><button data-lang="en">EN</button><button data-lang="zh">中文</button><button data-lang="ja">日本語</button>
+  </nav>
+</header>
+
+<main>
+  <section class="pass" aria-labelledby="passName">
+    <div class="pass-main">
+      <p class="eyebrow" data-t="yourStay"></p>
+      <h1 id="passName">…</h1>
+      <p class="pass-dong"></p>
+    </div>
+    <div class="pass-stub">
+      <span class="eyebrow" data-t="switchStay"></span>
+      <div class="stub-btns"><a href="?stay=A">A</a><a href="?stay=B">B</a></div>
+    </div>
+  </section>
+
+  <nav class="chips" aria-label="Sections">
+    <a href="#safety" data-t="safety"></a><a href="#places" data-t="places"></a><a href="#food" data-t="food"></a>
+    <a href="#events" data-t="events"></a><a href="#life" data-t="life"></a><a href="#more" data-t="more"></a>
+  </nav>
+
+  <section id="safety" class="block">
+    <h2 data-t="safety"></h2>
+    <p class="emergency-fixed"><a href="tel:119">119</a> · <a href="tel:112">112</a> · <a href="tel:1330">1330</a><span data-t="emergencyFixed"></span></p>
+    <div id="safetyBody" class="loading"></div>
+    <div class="sim">
+      <span data-t="demoWeather"></span>
+      <button data-sim=""><span data-t="simReal"></span></button>
+      <button data-sim="rain"><span data-t="simRain"></span></button>
+      <button data-sim="dust"><span data-t="simDust"></span></button>
+    </div>
+  </section>
+
+  <section id="places" class="block">
+    <h2 data-t="places"></h2>
+    <p class="hint" id="placesHint"></p>
+    <ol id="placesList" class="list"></ol>
+    <h3 data-t="official"></h3>
+    <div id="officialList"></div>
+  </section>
+
+  <section id="food" class="block"><h2 data-t="food"></h2><div id="foodBody"></div></section>
+  <section id="events" class="block"><h2 data-t="events"></h2><div id="eventsBody"></div></section>
+  <section id="life" class="block"><h2 data-t="life"></h2><div id="lifeBody"></div></section>
+
+  <section id="more" class="block">
+    <h2 data-t="more"></h2>
+    <ul class="links">
+      <li><a id="linkSb" href="https://www.sb.go.kr" target="_blank" rel="noopener" data-t="sbOffice"></a></li>
+      <li><a id="linkVisit" href="https://korean.visitseoul.net" target="_blank" rel="noopener" data-t="visit"></a></li>
+      <li><a href="tel:1330" data-t="hotline"></a></li>
+    </ul>
+    <p class="hint" data-t="privacy"></p>
+  </section>
+</main>
+<footer class="foot" data-t="footer"></footer>
+<script src="app.js"></script>
+</body>
+</html>
