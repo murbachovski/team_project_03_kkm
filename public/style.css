@@ -1,6 +1,7 @@
 :root {
   --fg: #1B1D22; --fg-2: #4D5159; --fg-3: #5F636B; /* 작은 글자 대비 4.5:1 이상 */
   --bg: #FFFFFF; --bg-subtle: #F4F5F7; --bg-muted: #EAEBEE;
+  --page-bg: #EC1F2D; /* 페이지 배경색 (빨간색) */
   --border: #E0E2E6; --border-strong: #C9CCD2;
   --accent: #5055B1; --accent-press: #3F4391; --accent-soft: #EEEFF9;
   --positive: #3A8A1C; --negative: #EC1F2D;
@@ -12,7 +13,7 @@
 html[lang="ja"] { --font: "Noto Sans JP", "Noto Sans KR", sans-serif; }
 html[lang="zh"] { --font: "Noto Sans SC", "Noto Sans KR", sans-serif; }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg-subtle); color: var(--fg); font: 400 16px/24px var(--font); letter-spacing: -0.01em; }
+body { margin: 0; background: var(--page-bg); color: var(--fg); font: 400 16px/24px var(--font); letter-spacing: -0.01em; }
 a { color: var(--accent); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 main { max-width: 832px; margin: 0 auto; padding: 0 16px 48px; }
@@ -33,7 +34,7 @@ main { max-width: 832px; margin: 0 auto; padding: 0 16px 48px; }
 .pass-dong { margin: 0; color: var(--fg-2); font-size: 14px; }
 .pass-stub { position: relative; padding: 20px 16px; border-left: 2px dashed var(--border-strong); background: var(--accent-soft);
   display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; }
-.pass-stub::before, .pass-stub::after { content: ""; position: absolute; left: -9px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg-subtle); border: 1px solid var(--border); }
+.pass-stub::before, .pass-stub::after { content: ""; position: absolute; left: -9px; width: 16px; height: 16px; border-radius: 50%; background: var(--page-bg); border: 1px solid var(--border); }
 .pass-stub::before { top: -9px; } .pass-stub::after { bottom: -9px; }
 .stub-btns { display: flex; gap: 4px; }
 .stub-btns a { font: 700 16px/40px var(--num); width: 40px; text-align: center; border-radius: 9999px; text-decoration: none; color: var(--accent); background: var(--bg); border: 1px solid var(--accent); }
