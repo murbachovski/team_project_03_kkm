@@ -1,7 +1,7 @@
 :root {
   --fg: #1B1D22; --fg-2: #4D5159; --fg-3: #5F636B; /* 작은 글자 대비 4.5:1 이상 */
   --bg: #FFFFFF; --bg-subtle: #F4F5F7; --bg-muted: #EAEBEE;
-  --page-bg: #EC1F2D; /* 페이지 배경색 (빨간색) */
+  --page-bg: #1B2A5C; /* 페이지 배경색 (남색) */
   --border: #E0E2E6; --border-strong: #C9CCD2;
   --accent: #5055B1; --accent-press: #3F4391; --accent-soft: #EEEFF9;
   --positive: #3A8A1C; --negative: #EC1F2D;
